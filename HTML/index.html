@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapibolitas – Bolitas de Papa con Queso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <img src="IMG/LOGO.png" alt="Rapibolitas" class="logo-img">
+        <span class="logo-text">Rapi<span>bolitas</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio"   class="nav-link active">Inicio</a>
+        <a href="#menu"     class="nav-link">Nuestro Menú</a>
+        <a href="#combos"   class="nav-link">Combos</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/50368428856" target="_blank" class="btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.135.558 4.14 1.535 5.875L.057 23.929a.5.5 0 0 0 .614.614l6.054-1.478A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.86-.542-5.46-1.484l-.39-.23-4.044.987.987-4.044-.23-.39A9.96 9.96 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          Pedir Ahora
+        </a>
+        <button class="cart-btn" id="cartBtn" aria-label="Carrito">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       CARRUSEL HERO
+  ══════════════════════════════════════════ -->
+  <section class="carousel-section" id="inicio">
+    <div class="carousel" id="carousel">
+
+      <!-- Slide 1 – Bolitas de Papa con Queso -->
+      <div class="slide active" data-index="0">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#6b21a8 0%,#a855f7 50%,#f97316 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">⭐ Lo Más Pedido</span>
+            <h1>Bolitas de Papa<br /><span class="accent">con Queso</span></h1>
+            <p>Suaves por fuera, cremosas y derretidas por dentro. Una explosión de sabor en cada bocado irresistible.</p>
+            <div class="slide-btns">
+              <a href="#menu" class="btn-primary">Ver Menú</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Pedir Ahora 🛒</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <!-- SVG realista: bolitas de papa con queso derretido -->
+              <div class="food-emoji">
+                <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg" width="110" height="90">
+                  <!-- bolita izquierda -->
+                  <ellipse cx="32" cy="68" rx="26" ry="24" fill="#c8860a"/>
+                  <ellipse cx="32" cy="68" rx="26" ry="24" fill="url(#bolGrad1)"/>
+                  <ellipse cx="24" cy="58" rx="8" ry="6" fill="rgba(255,200,80,.35)"/>
+                  <!-- bolita derecha -->
+                  <ellipse cx="88" cy="68" rx="26" ry="24" fill="#c8860a"/>
+                  <ellipse cx="88" cy="68" rx="26" ry="24" fill="url(#bolGrad2)"/>
+                  <ellipse cx="80" cy="58" rx="8" ry="6" fill="rgba(255,200,80,.35)"/>
+                  <!-- bolita centro arriba -->
+                  <ellipse cx="60" cy="44" rx="26" ry="24" fill="#c8860a"/>
+                  <ellipse cx="60" cy="44" rx="26" ry="24" fill="url(#bolGrad3)"/>
+                  <ellipse cx="52" cy="34" rx="8" ry="6" fill="rgba(255,200,80,.35)"/>
+                  <!-- queso derretido -->
+                  <path d="M38 54 Q60 62 82 54 Q78 72 60 76 Q42 72 38 54Z" fill="#f5c842" opacity="0.92"/>
+                  <path d="M50 74 Q60 80 70 74 Q68 84 60 86 Q52 84 50 74Z" fill="#f5c842" opacity="0.85"/>
+                  <defs>
+                    <radialGradient id="bolGrad1" cx="35%" cy="30%">
+                      <stop offset="0%" stop-color="#e8a020"/>
+                      <stop offset="100%" stop-color="#7a4800"/>
+                    </radialGradient>
+                    <radialGradient id="bolGrad2" cx="35%" cy="30%">
+                      <stop offset="0%" stop-color="#e8a020"/>
+                      <stop offset="100%" stop-color="#7a4800"/>
+                    </radialGradient>
+                    <radialGradient id="bolGrad3" cx="35%" cy="30%">
+                      <stop offset="0%" stop-color="#e8a020"/>
+                      <stop offset="100%" stop-color="#7a4800"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="food-label">Bolitas de Papa<br />con Queso</div>
+              <div class="food-price">Desde <strong>$1.00</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 – Rapiditas Mixtas -->
+      <div class="slide" data-index="1">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#7c3aed 0%,#db2777 50%,#f59e0b 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">🔥 Nuevo</span>
+            <h1>Rapiditas<br /><span class="accent">Mixtas</span></h1>
+            <p>Tortilla de trigo rellena de carne y pollo. Combinaciones únicas llenas de sabor.</p>
+            <div class="slide-btns">
+              <a href="#menu" class="btn-primary">Explorar</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Pedir Ya</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <!-- SVG realista: tortilla de trigo (rapidita) -->
+              <div class="food-emoji">
+                <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg" width="110" height="90">
+                  <!-- tortilla base -->
+                  <ellipse cx="60" cy="72" rx="52" ry="14" fill="#d4914a"/>
+                  <ellipse cx="60" cy="70" rx="52" ry="14" fill="#e8b06a"/>
+                  <!-- relleno carne -->
+                  <ellipse cx="60" cy="58" rx="38" ry="18" fill="#8B4513"/>
+                  <ellipse cx="60" cy="56" rx="36" ry="16" fill="#a0522d"/>
+                  <!-- tiras de pollo -->
+                  <path d="M30 50 Q45 44 60 48 Q75 44 90 50 Q75 54 60 52 Q45 54 30 50Z" fill="#d4a04a"/>
+                  <!-- lechuga verde -->
+                  <path d="M26 56 Q40 48 55 53 Q40 60 26 56Z" fill="#4a9a3a"/>
+                  <path d="M94 56 Q80 48 65 53 Q80 60 94 56Z" fill="#4a9a3a"/>
+                  <!-- tomate -->
+                  <circle cx="52" cy="52" r="5" fill="#cc3333"/>
+                  <circle cx="68" cy="52" r="5" fill="#cc3333"/>
+                  <!-- tortilla doblada arriba -->
+                  <ellipse cx="60" cy="42" rx="52" ry="14" fill="#f0c87a"/>
+                  <ellipse cx="60" cy="40" rx="52" ry="12" fill="#f5d490"/>
+                  <!-- textura tortilla -->
+                  <ellipse cx="60" cy="40" rx="40" ry="8" fill="none" stroke="#d4a84a" stroke-width="1" opacity="0.5"/>
+                  <ellipse cx="60" cy="40" rx="28" ry="5" fill="none" stroke="#d4a84a" stroke-width="1" opacity="0.4"/>
+                </svg>
+              </div>
+              <div class="food-label">Rapiditas Mixtas</div>
+              <div class="food-price">Desde <strong>$1.25</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 – Refresco de Gaseosa -->
+      <div class="slide" data-index="2">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#1e3a5f 0%,#2563eb 50%,#7c3aed 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">❄️ Bien Frío</span>
+            <h1>Refresco de<br /><span class="accent">Gaseosa</span></h1>
+            <p>El complemento perfecto para tu antojo. Bien fría y refrescante, justo como la necesitas.</p>
+            <div class="slide-btns">
+              <a href="#menu" class="btn-primary">Ver Bebidas</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Ordenar</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <!-- SVG realista: vaso de gaseosa con burbujas -->
+              <div class="food-emoji">
+                <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="110" height="95">
+                  <!-- vaso -->
+                  <path d="M30 20 L36 95 Q60 100 84 95 L90 20 Z" fill="#c8e8ff" opacity="0.3"/>
+                  <path d="M30 20 L36 95 Q60 100 84 95 L90 20 Z" fill="url(#gasGrad)"/>
+                  <!-- líquido oscuro (cola) -->
+                  <path d="M32 38 L37 95 Q60 100 83 95 L88 38 Z" fill="#3a1a00" opacity="0.88"/>
+                  <!-- burbujas -->
+                  <circle cx="50" cy="80" r="3" fill="rgba(255,255,255,.5)"/>
+                  <circle cx="65" cy="65" r="2" fill="rgba(255,255,255,.5)"/>
+                  <circle cx="55" cy="55" r="2.5" fill="rgba(255,255,255,.4)"/>
+                  <circle cx="72" cy="75" r="2" fill="rgba(255,255,255,.45)"/>
+                  <circle cx="45" cy="68" r="1.5" fill="rgba(255,255,255,.4)"/>
+                  <circle cx="70" cy="50" r="1.5" fill="rgba(255,255,255,.4)"/>
+                  <!-- espuma arriba -->
+                  <path d="M32 38 Q45 32 60 35 Q75 32 88 38 Q75 44 60 41 Q45 44 32 38Z" fill="rgba(255,255,255,.25)"/>
+                  <!-- borde vaso arriba -->
+                  <rect x="28" y="16" width="64" height="8" rx="4" fill="#a0c8e8"/>
+                  <!-- popote/pajilla -->
+                  <rect x="72" y="5" width="5" height="50" rx="2.5" fill="#ff6b9d"/>
+                  <rect x="72" y="5" width="5" height="50" rx="2.5" fill="url(#popotGrad)" opacity="0.7"/>
+                  <!-- hielo -->
+                  <rect x="42" y="60" width="14" height="10" rx="3" fill="rgba(200,235,255,.6)" transform="rotate(-15,49,65)"/>
+                  <rect x="62" y="70" width="12" height="9" rx="3" fill="rgba(200,235,255,.6)" transform="rotate(10,68,74)"/>
+                  <defs>
+                    <linearGradient id="gasGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="rgba(160,200,240,.4)"/>
+                      <stop offset="50%" stop-color="rgba(220,240,255,.15)"/>
+                      <stop offset="100%" stop-color="rgba(160,200,240,.4)"/>
+                    </linearGradient>
+                    <linearGradient id="popotGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#fff" stop-opacity="0.6"/>
+                      <stop offset="100%" stop-color="#ff6b9d" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="food-label">Refresco de Gaseosa</div>
+              <div class="food-price">Solo <strong>$0.40</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 – Horchata -->
+      <div class="slide" data-index="3">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#92400e 0%,#d97706 50%,#fbbf24 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">🌾 Tradicional</span>
+            <h1>Horchata<br /><span class="accent">Cremosa</span></h1>
+            <p>Tradicional, cremosa y refrescante hecha de morro. La bebida que nunca falla y que todos adoran.</p>
+            <div class="slide-btns">
+              <a href="#menu" class="btn-primary">Ver Más</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Pedir Ahora</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <!-- SVG realista: vaso de horchata color canela -->
+              <div class="food-emoji">
+                <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="110" height="95">
+                  <!-- vaso transparente -->
+                  <path d="M30 20 L36 95 Q60 100 84 95 L90 20 Z" fill="url(#vasoClaroGrad)"/>
+                  <!-- líquido horchata (color canela/crema) -->
+                  <path d="M32 36 L37 95 Q60 100 83 95 L88 36 Z" fill="#c8935a"/>
+                  <path d="M32 36 L37 95 Q60 100 83 95 L88 36 Z" fill="url(#horchatGrad)"/>
+                  <!-- espuma cremosa arriba -->
+                  <path d="M32 36 Q40 28 52 32 Q60 26 68 32 Q80 28 88 36 Q76 44 60 40 Q44 44 32 36Z" fill="#f5e6c8"/>
+                  <!-- canela en polvo encima -->
+                  <ellipse cx="60" cy="34" rx="20" ry="5" fill="#8B4513" opacity="0.25"/>
+                  <!-- semillas de morro (puntitos oscuros) -->
+                  <circle cx="48" cy="55" r="2" fill="#5a3010" opacity="0.5"/>
+                  <circle cx="60" cy="70" r="2" fill="#5a3010" opacity="0.5"/>
+                  <circle cx="72" cy="60" r="2" fill="#5a3010" opacity="0.5"/>
+                  <circle cx="54" cy="78" r="1.5" fill="#5a3010" opacity="0.45"/>
+                  <circle cx="68" cy="82" r="1.5" fill="#5a3010" opacity="0.45"/>
+                  <!-- borde vaso arriba -->
+                  <rect x="28" y="16" width="64" height="8" rx="4" fill="#d4b896"/>
+                  <!-- pajilla -->
+                  <rect x="72" y="5" width="5" height="50" rx="2.5" fill="#8B4513"/>
+                  <defs>
+                    <linearGradient id="vasoClaroGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="rgba(200,180,140,.35)"/>
+                      <stop offset="50%" stop-color="rgba(240,220,180,.12)"/>
+                      <stop offset="100%" stop-color="rgba(200,180,140,.35)"/>
+                    </linearGradient>
+                    <linearGradient id="horchatGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#a0723a"/>
+                      <stop offset="40%" stop-color="#d4a060"/>
+                      <stop offset="100%" stop-color="#a0723a"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="food-label">Horchata Tradicional</div>
+              <div class="food-price">Solo <strong>$0.50</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 – Combo Rapiditas + Refresco -->
+      <div class="slide" data-index="4">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#065f46 0%,#059669 50%,#34d399 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">💚 Combo Especial</span>
+            <h1>Rapiditas<br /><span class="accent">+ Refresco</span></h1>
+            <p>Rapiditas Mixtas con Refresco de Gaseosa bien frío. ¡La combinación perfecta para ti!</p>
+            <div class="slide-btns">
+              <a href="#combos" class="btn-primary">Ver Combos</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Pedir Combo</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <div class="food-emoji" style="display:flex;gap:6px;align-items:center;justify-content:center">
+                <!-- mini tortilla -->
+                <svg viewBox="0 0 80 70" width="52" height="46">
+                  <ellipse cx="40" cy="52" rx="36" ry="10" fill="#e8b06a"/>
+                  <ellipse cx="40" cy="42" rx="30" ry="14" fill="#8B4513"/>
+                  <path d="M18 38 Q32 32 46 36 Q32 42 18 38Z" fill="#4a9a3a"/>
+                  <ellipse cx="40" cy="28" rx="36" ry="10" fill="#f5d490"/>
+                </svg>
+                <span style="font-size:1.4rem;color:#fff;font-weight:900">+</span>
+                <!-- mini gaseosa -->
+                <svg viewBox="0 0 70 90" width="38" height="55">
+                  <path d="M15 12 L20 78 Q35 82 50 78 L55 12 Z" fill="rgba(160,200,240,.3)"/>
+                  <path d="M17 26 L21 78 Q35 82 49 78 L53 26 Z" fill="#3a1a00" opacity="0.9"/>
+                  <circle cx="30" cy="55" r="2.5" fill="rgba(255,255,255,.5)"/>
+                  <circle cx="40" cy="45" r="2" fill="rgba(255,255,255,.45)"/>
+                  <rect x="13" y="8" width="44" height="7" rx="3.5" fill="#a0c8e8"/>
+                  <rect x="44" y="2" width="4" height="36" rx="2" fill="#ff6b9d"/>
+                </svg>
+              </div>
+              <div class="food-label">Combo 1<br />Rapiditas + Gaseosa</div>
+              <div class="food-price">Solo <strong>$1.50</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 – Combo Bolitas + Horchata -->
+      <div class="slide" data-index="5">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#831843 0%,#ec4899 50%,#f97316 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">💜 Combo Favorito</span>
+            <h1>Bolitas de Queso<br /><span class="accent">+ Horchata</span></h1>
+            <p>Nuestras famosas bolitas de papa con queso acompañadas de una horchata bien cremosa. ¡Irresistible!</p>
+            <div class="slide-btns">
+              <a href="#combos" class="btn-primary">Ver Combos</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Quiero Este</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <div class="food-emoji" style="display:flex;gap:6px;align-items:center;justify-content:center">
+                <!-- mini bolitas -->
+                <svg viewBox="0 0 80 70" width="52" height="46">
+                  <ellipse cx="22" cy="50" rx="18" ry="17" fill="url(#mb1)"/>
+                  <ellipse cx="58" cy="50" rx="18" ry="17" fill="url(#mb2)"/>
+                  <ellipse cx="40" cy="32" rx="18" ry="17" fill="url(#mb3)"/>
+                  <path d="M24 38 Q40 44 56 38 Q54 50 40 53 Q26 50 24 38Z" fill="#f5c842" opacity="0.9"/>
+                  <defs>
+                    <radialGradient id="mb1" cx="35%" cy="30%"><stop offset="0%" stop-color="#e8a020"/><stop offset="100%" stop-color="#7a4800"/></radialGradient>
+                    <radialGradient id="mb2" cx="35%" cy="30%"><stop offset="0%" stop-color="#e8a020"/><stop offset="100%" stop-color="#7a4800"/></radialGradient>
+                    <radialGradient id="mb3" cx="35%" cy="30%"><stop offset="0%" stop-color="#e8a020"/><stop offset="100%" stop-color="#7a4800"/></radialGradient>
+                  </defs>
+                </svg>
+                <span style="font-size:1.4rem;color:#fff;font-weight:900">+</span>
+                <!-- mini horchata -->
+                <svg viewBox="0 0 70 90" width="38" height="55">
+                  <path d="M15 12 L20 78 Q35 82 50 78 L55 12 Z" fill="rgba(200,160,100,.3)"/>
+                  <path d="M17 26 L21 78 Q35 82 49 78 L53 26 Z" fill="#c8935a"/>
+                  <path d="M17 26 Q25 20 35 23 Q45 20 53 26 Q45 32 35 29 Q25 32 17 26Z" fill="#f5e6c8"/>
+                  <circle cx="30" cy="55" r="1.5" fill="#5a3010" opacity="0.5"/>
+                  <circle cx="40" cy="65" r="1.5" fill="#5a3010" opacity="0.5"/>
+                  <rect x="13" y="8" width="44" height="7" rx="3.5" fill="#d4b896"/>
+                  <rect x="44" y="2" width="4" height="36" rx="2" fill="#8B4513"/>
+                </svg>
+              </div>
+              <div class="food-label">Combo 2<br />Rapibolitas + Horchata</div>
+              <div class="food-price">Solo <strong>$1.25</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7 – Combos Completos -->
+      <div class="slide" data-index="6">
+        <div class="slide-bg" style="background: linear-gradient(135deg,#312e81 0%,#7c3aed 40%,#be185d 100%)"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-badge">👑 ¡Elige Tu Combo!</span>
+            <h1>4 Combos<br /><span class="accent">Increíbles</span></h1>
+            <p>Rapibolitas + Gaseosa · Rapibolitas + Horchata · Rapiditas + Gaseosa · Rapiditas + Horchata</p>
+            <div class="slide-btns">
+              <a href="#combos" class="btn-primary">Ver Todos</a>
+              <a href="https://wa.me/50368428856" target="_blank" class="btn-outline">Pedir Ahora</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="food-card">
+              <div class="food-emoji" style="font-size:3.5rem">🎉</div>
+              <div class="food-label">Combos desde</div>
+              <div class="food-price">desde <strong>$1.25</strong> hasta <strong>$1.50</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.carousel -->
+
+    <button class="carousel-arrow prev" id="carouselPrev" aria-label="Anterior">&#8249;</button>
+    <button class="carousel-arrow next" id="carouselNext" aria-label="Siguiente">&#8250;</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FEATURES BAR
+  ══════════════════════════════════════════ -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🏆</span>
+          <div><strong>Ingredientes de Calidad</strong><p>Frescos y seleccionados cada día</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⚡</span>
+          <div><strong>Hecho al Momento</strong><p>Siempre calientito para ti</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">❤️</span>
+          <div><strong>Sabor que Enamora</strong><p>Combinaciones únicas e irresistibles</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎉</span>
+          <div><strong>Para Toda Ocasión</strong><p>Ideal para compartir y disfrutar</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MENÚ
+  ══════════════════════════════════════════ -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🍽️ Lo que ofrecemos</span>
+        <h2>Nuestro <span class="accent">Menú</span></h2>
+        <p>Cada platillo preparado con amor y los mejores ingredientes</p>
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- Tarjeta 1: Bolitas con Horchata -->
+        <div class="menu-card" data-id="1" data-name="Bolitas de Papa con Queso + Horchata" data-price="1.25">
+          <div class="menu-card-img">
+            <img src="IMG/bolitas con horchata.jpeg" alt="Bolitas con Horchata">
+          </div>
+          <div class="menu-card-body">
+            <h3>Bolitas de Papa con Queso + Horchata</h3>
+            <p>Nuestras bolitas doradas con queso derretido acompañadas de horchata cremosa.</p>
+            <div class="menu-card-footer">
+              <span class="price">$1.25</span>
+              <button class="btn-add" onclick="addToCart(1,'Bolitas de Papa con Queso + Horchata',1.25,'🧆')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Rapiditas con Horchata -->
+        <div class="menu-card" data-id="2" data-name="Rapiditas con Horchata" data-price="1.50">
+          <div class="menu-card-img">
+            <img src="IMG/rapiditas con horchata.jpeg" alt="Rapiditas con Horchata">
+          </div>
+          <div class="menu-card-body">
+            <h3>Rapiditas con Horchata</h3>
+            <p>Tortilla de trigo con carne y pollo acompañada de horchata bien cremosa.</p>
+            <div class="menu-card-footer">
+              <span class="price">$1.50</span>
+              <button class="btn-add" onclick="addToCart(2,'Rapiditas con Horchata',1.50,'🌮')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Gaseosa -->
+        <div class="menu-card" data-id="3" data-name="Refresco de Gaseosa" data-price="0.40">
+          <div class="menu-card-img svg-card-img">
+            <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="90" height="85">
+              <path d="M30 20 L36 95 Q60 100 84 95 L90 20 Z" fill="rgba(160,200,240,.3)"/>
+              <path d="M32 38 L37 95 Q60 100 83 95 L88 38 Z" fill="#3a1a00" opacity="0.88"/>
+              <circle cx="50" cy="80" r="3" fill="rgba(255,255,255,.5)"/>
+              <circle cx="65" cy="65" r="2" fill="rgba(255,255,255,.5)"/>
+              <circle cx="55" cy="55" r="2.5" fill="rgba(255,255,255,.4)"/>
+              <circle cx="72" cy="75" r="2" fill="rgba(255,255,255,.45)"/>
+              <path d="M32 38 Q45 32 60 35 Q75 32 88 38 Q75 44 60 41 Q45 44 32 38Z" fill="rgba(255,255,255,.25)"/>
+              <rect x="28" y="16" width="64" height="8" rx="4" fill="#a0c8e8"/>
+              <rect x="72" y="5" width="5" height="50" rx="2.5" fill="#ff6b9d"/>
+              <rect x="42" y="60" width="14" height="10" rx="3" fill="rgba(200,235,255,.6)" transform="rotate(-15,49,65)"/>
+              <rect x="62" y="70" width="12" height="9" rx="3" fill="rgba(200,235,255,.6)" transform="rotate(10,68,74)"/>
+            </svg>
+          </div>
+          <div class="menu-card-body">
+            <h3>Refresco de Gaseosa</h3>
+            <p>Bien frío y burbujeante. El complemento perfecto para tu antojo favorito.</p>
+            <div class="menu-card-footer">
+              <span class="price">$0.40</span>
+              <button class="btn-add" onclick="addToCart(3,'Refresco de Gaseosa',0.40,'🥤')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Horchata -->
+        <div class="menu-card" data-id="4" data-name="Horchata" data-price="0.50">
+          <div class="menu-card-img">
+            <img src="IMG/horchata.jpeg" alt="Horchata">
+          </div>
+          <div class="menu-card-body">
+            <h3>Horchata de Morro</h3>
+            <p>Tradicional y cremosa, hecha de semilla de morro. La bebida favorita de todos.</p>
+            <div class="menu-card-footer">
+              <span class="price">$0.50</span>
+              <button class="btn-add" onclick="addToCart(4,'Horchata',0.50,'🥛')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Bolitas + Gaseosa -->
+        <div class="menu-card" data-id="5" data-name="Bolitas de Papa con Queso + Gaseosa" data-price="1.30">
+          <div class="menu-card-img svg-card-img">
+            <svg viewBox="0 0 130 100" xmlns="http://www.w3.org/2000/svg" width="110" height="85">
+              <!-- bolitas -->
+              <ellipse cx="28" cy="62" rx="22" ry="20" fill="url(#tcb1)"/>
+              <ellipse cx="20" cy="52" rx="7" ry="5" fill="rgba(255,200,80,.3)"/>
+              <ellipse cx="64" cy="62" rx="22" ry="20" fill="url(#tcb2)"/>
+              <ellipse cx="56" cy="52" rx="7" ry="5" fill="rgba(255,200,80,.3)"/>
+              <ellipse cx="46" cy="42" rx="22" ry="20" fill="url(#tcb3)"/>
+              <ellipse cx="38" cy="32" rx="7" ry="5" fill="rgba(255,200,80,.3)"/>
+              <path d="M30 50 Q46 56 62 50 Q60 64 46 67 Q32 64 30 50Z" fill="#f5c842" opacity="0.9"/>
+              <!-- mini gaseosa -->
+              <path d="M88 18 L92 88 Q105 92 118 88 L122 18 Z" fill="rgba(160,200,240,.3)"/>
+              <path d="M90 30 L93 88 Q105 92 117 88 L120 30 Z" fill="#3a1a00" opacity="0.88"/>
+              <circle cx="100" cy="68" r="2" fill="rgba(255,255,255,.5)"/>
+              <circle cx="108" cy="55" r="1.5" fill="rgba(255,255,255,.45)"/>
+              <rect x="86" y="13" width="38" height="6" rx="3" fill="#a0c8e8"/>
+              <rect x="112" y="5" width="4" height="32" rx="2" fill="#ff6b9d"/>
+              <defs>
+                <radialGradient id="tcb1" cx="35%" cy="30%"><stop offset="0%" stop-color="#e8a020"/><stop offset="100%" stop-color="#7a4800"/></radialGradient>
+                <radialGradient id="tcb2" cx="35%" cy="30%"><stop offset="0%" stop-color="#e8a020"/><stop offset="100%" stop-color="#7a4800"/></radialGradient>
+                <radialGradient id="tcb3" cx="35%" cy="30%"><stop offset="0%" stop-color="#e8a020"/><stop offset="100%" stop-color="#7a4800"/></radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="menu-card-body">
+            <h3>Bolitas de Papa con Queso + Gaseosa</h3>
+            <p>Las bolitas que todos aman con un refresco bien frío. ¡Combinación perfecta!</p>
+            <div class="menu-card-footer">
+              <span class="price">$1.30</span>
+              <button class="btn-add" onclick="addToCart(5,'Bolitas de Papa con Queso + Gaseosa',1.30,'🧆')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6: Rapiditas + Gaseosa -->
+        <div class="menu-card" data-id="6" data-name="Rapiditas con Gaseosa" data-price="1.50">
+          <div class="menu-card-img svg-card-img">
+            <svg viewBox="0 0 130 90" xmlns="http://www.w3.org/2000/svg" width="110" height="80">
+              <!-- tortilla -->
+              <ellipse cx="46" cy="68" rx="40" ry="11" fill="#e8b06a"/>
+              <ellipse cx="46" cy="56" rx="32" ry="15" fill="#8B4513"/>
+              <path d="M20 50 Q34 44 48 48 Q34 54 20 50Z" fill="#4a9a3a"/>
+              <path d="M72 50 Q58 44 44 48 Q58 54 72 50Z" fill="#4a9a3a"/>
+              <circle cx="40" cy="48" r="4" fill="#cc3333"/>
+              <circle cx="54" cy="48" r="4" fill="#cc3333"/>
+              <ellipse cx="46" cy="36" rx="40" ry="11" fill="#f5d490"/>
+              <!-- mini gaseosa -->
+              <path d="M92 10 L96 80 Q109 84 122 80 L126 10 Z" fill="rgba(160,200,240,.3)"/>
+              <path d="M94 22 L97 80 Q109 84 121 80 L124 22 Z" fill="#3a1a00" opacity="0.88"/>
+              <circle cx="104" cy="60" r="2" fill="rgba(255,255,255,.5)"/>
+              <circle cx="112" cy="48" r="1.5" fill="rgba(255,255,255,.45)"/>
+              <rect x="90" y="5" width="38" height="6" rx="3" fill="#a0c8e8"/>
+              <rect x="116" y="-2" width="4" height="30" rx="2" fill="#ff6b9d"/>
+            </svg>
+          </div>
+          <div class="menu-card-body">
+            <h3>Rapiditas con Gaseosa</h3>
+            <p>Tortilla de trigo con carne y pollo acompañada de refresco bien frío.</p>
+            <div class="menu-card-footer">
+              <span class="price">$1.50</span>
+              <button class="btn-add" onclick="addToCart(6,'Rapiditas con Gaseosa',1.50,'🌮')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 7: Pinchos de Chocolate -->
+        <div class="menu-card" data-id="7" data-name="Aperitivo Pinchos de Chocolate" data-price="0.75">
+          <div class="menu-card-img svg-card-img">
+            <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg" width="100" height="85">
+              <!-- palito 1 -->
+              <rect x="18" y="12" width="3" height="78" rx="1.5" fill="#8B6040"/>
+              <!-- fresa -->
+              <ellipse cx="19.5" cy="18" rx="10" ry="12" fill="#cc2200"/>
+              <ellipse cx="19.5" cy="18" rx="10" ry="12" fill="url(#fresaGrad)"/>
+              <path d="M13 12 Q19.5 6 26 12" fill="#2d7a1a" stroke="#2d7a1a" stroke-width="1.5"/>
+              <!-- chocolate sobre fresa -->
+              <ellipse cx="19.5" cy="22" rx="10" ry="7" fill="#3d1c00" opacity="0.85"/>
+              <ellipse cx="16" cy="20" rx="3" ry="2" fill="rgba(255,255,255,.15)"/>
+
+              <!-- palito 2 -->
+              <rect x="48" y="18" width="3" height="72" rx="1.5" fill="#8B6040"/>
+              <!-- uva -->
+              <circle cx="49.5" cy="24" r="11" fill="#6b1fa8"/>
+              <circle cx="49.5" cy="24" r="11" fill="url(#uvaGrad)"/>
+              <circle cx="45" cy="20" r="3" fill="rgba(255,255,255,.2)"/>
+              <!-- chocolate sobre uva -->
+              <ellipse cx="49.5" cy="30" rx="11" ry="7" fill="#3d1c00" opacity="0.85"/>
+
+              <!-- palito 3 -->
+              <rect x="78" y="12" width="3" height="78" rx="1.5" fill="#8B6040"/>
+              <!-- fresa 2 -->
+              <ellipse cx="79.5" cy="18" rx="10" ry="12" fill="#cc2200"/>
+              <ellipse cx="79.5" cy="18" rx="10" ry="12" fill="url(#fresaGrad2)"/>
+              <path d="M73 12 Q79.5 6 86 12" fill="#2d7a1a" stroke="#2d7a1a" stroke-width="1.5"/>
+              <!-- chocolate -->
+              <ellipse cx="79.5" cy="22" rx="10" ry="7" fill="#3d1c00" opacity="0.85"/>
+              <ellipse cx="76" cy="20" rx="3" ry="2" fill="rgba(255,255,255,.15)"/>
+
+              <!-- palito 4 -->
+              <rect x="108" y="18" width="3" height="72" rx="1.5" fill="#8B6040"/>
+              <!-- uva 2 -->
+              <circle cx="109.5" cy="24" r="11" fill="#6b1fa8"/>
+              <circle cx="109.5" cy="24" r="11" fill="url(#uvaGrad2)"/>
+              <circle cx="105" cy="20" r="3" fill="rgba(255,255,255,.2)"/>
+              <!-- chocolate -->
+              <ellipse cx="109.5" cy="30" rx="11" ry="7" fill="#3d1c00" opacity="0.85"/>
+
+              <!-- chispas de chocolate cayendo -->
+              <path d="M22 30 Q24 36 20 40" stroke="#5a2d00" stroke-width="2" fill="none"/>
+              <path d="M52 37 Q54 43 50 47" stroke="#5a2d00" stroke-width="2" fill="none"/>
+
+              <defs>
+                <radialGradient id="fresaGrad" cx="35%" cy="30%"><stop offset="0%" stop-color="#ff4422"/><stop offset="100%" stop-color="#880000"/></radialGradient>
+                <radialGradient id="fresaGrad2" cx="35%" cy="30%"><stop offset="0%" stop-color="#ff4422"/><stop offset="100%" stop-color="#880000"/></radialGradient>
+                <radialGradient id="uvaGrad" cx="35%" cy="30%"><stop offset="0%" stop-color="#9b4fc8"/><stop offset="100%" stop-color="#3d0870"/></radialGradient>
+                <radialGradient id="uvaGrad2" cx="35%" cy="30%"><stop offset="0%" stop-color="#9b4fc8"/><stop offset="100%" stop-color="#3d0870"/></radialGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="menu-card-body">
+            <h3>Aperitivo Pinchos de Chocolate</h3>
+            <p>Fresa y uva bañadas en chocolate café oscuro. El dulce final perfecto.</p>
+            <div class="menu-card-footer">
+              <span class="price">$0.75</span>
+              <button class="btn-add" onclick="addToCart(7,'Aperitivo Pinchos de Chocolate',0.75,'🍡')">+ Agregar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       COMBOS
+  ══════════════════════════════════════════ -->
+  <section class="section section-dark" id="combos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🎁 Ahorra más</span>
+        <h2>Nuestros <span class="accent">Combos</span></h2>
+        <p>¡La combinación perfecta para ti!</p>
+      </div>
+
+      <div class="combos-grid">
+        <div class="combo-card combo-1">
+          <div class="combo-badge">Combo 1</div>
+          <div class="combo-emojis">🧆 + 🥤</div>
+          <h3>Rapibolitas<br />+ Gaseosa</h3>
+          <p>Nuestras bolitas de papa con queso acompañadas de refresco de gaseosa bien frío.</p>
+          <div class="combo-price">$1.30</div>
+          <button class="btn-combo" onclick="addToCart(10,'Combo 1 – Rapibolitas + Gaseosa',1.30,'🧆🥤')">Agregar Combo</button>
+        </div>
+
+        <div class="combo-card combo-2">
+          <div class="combo-badge">Combo 2</div>
+          <div class="combo-emojis">🧆 + 🥛</div>
+          <h3>Rapibolitas<br />+ Horchata</h3>
+          <p>Nuestras bolitas de papa con queso acompañadas de horchata cremosa y tradicional.</p>
+          <div class="combo-price">$1.25</div>
+          <button class="btn-combo" onclick="addToCart(11,'Combo 2 – Rapibolitas + Horchata',1.25,'🧆🥛')">Agregar Combo</button>
+        </div>
+
+        <div class="combo-card combo-3">
+          <div class="combo-badge">Combo 3</div>
+          <div class="combo-emojis">🌮 + 🥤</div>
+          <h3>Rapiditas Mixtas<br />+ Gaseosa</h3>
+          <p>Tortilla de trigo con carne y pollo acompañada de refresco de gaseosa. ¡Irresistible!</p>
+          <div class="combo-price">$1.50</div>
+          <button class="btn-combo" onclick="addToCart(12,'Combo 3 – Rapiditas + Gaseosa',1.50,'🌮🥤')">Agregar Combo</button>
+        </div>
+
+        <div class="combo-card combo-4">
+          <div class="combo-badge">Combo 4</div>
+          <div class="combo-emojis">🌮 + 🥛</div>
+          <h3>Rapiditas Mixtas<br />+ Horchata</h3>
+          <p>Rapiditas Mixtas acompañadas de horchata cremosa de morro. ¡El favorito!</p>
+          <div class="combo-price">$1.50</div>
+          <button class="btn-combo" onclick="addToCart(13,'Combo 4 – Rapiditas + Horchata',1.50,'🌮🥛')">Agregar Combo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       NOSOTROS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">💜 Quiénes somos</span>
+          <h2>¿Por qué elegir<br /><span class="accent">Rapibolitas?</span></h2>
+          <p>Somos apasionados de la comida de calidad. Cada bolita de papa la preparamos con los mejores ingredientes, cocinada al momento para que siempre llegue caliente y deliciosa a tus manos.</p>
+          <ul class="about-list">
+            <li>✅ Bolitas de queso derretidas: suaves por fuera, cremosas por dentro</li>
+            <li>✅ Rapiditas Mixtas: tortilla de trigo con carne y pollo</li>
+            <li>✅ Bebidas siempre frías y refrescantes</li>
+            <li>✅ Aperitivo dulce: pinchos de chocolate de fresa con uva</li>
+            <li>✅ Atención personalizada y rápida</li>
+          </ul>
+          <a href="https://wa.me/50368428856" target="_blank" class="btn-primary">Escríbenos: 6842-8856</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Ingredientes Frescos</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Combos Disponibles</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">⚡</div>
+              <div class="stat-label">Entrega Rápida</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">❤️</div>
+              <div class="stat-label">Hecho con Amor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════════ -->
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">📱 Contáctanos</span>
+        <h2>¡Haz tu <span class="accent">pedido</span> ahora!</h2>
+        <p>Es fácil, rápido y delicioso. Solo escríbenos al <strong style="color:#a855f7">6842-8856</strong></p>
+      </div>
+      <div class="contact-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-icon">📱</div>
+          <h4>Escríbenos</h4>
+          <p>Por WhatsApp al <strong>6842-8856</strong></p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-icon">🛒</div>
+          <h4>Elige tus productos</h4>
+          <p>Selecciona del menú lo que más te antoje</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-icon">🎉</div>
+          <h4>Recibe y disfruta</h4>
+          <p>¡Listo! Disfruta tu pedido caliente</p>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <a href="https://wa.me/50368428856" target="_blank" class="btn-whatsapp-big">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.135.558 4.14 1.535 5.875L.057 23.929a.5.5 0 0 0 .614.614l6.054-1.478A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.86-.542-5.46-1.484l-.39-.23-4.044.987.987-4.044-.23-.39A9.96 9.96 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          Pedir por WhatsApp · 6842-8856
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text" style="font-size:1.8rem">Rapi<span>bolitas</span></span>
+          <p>Hecho con amor, para ti ❤️</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">📸 rapibolitas.sv</a>
+            <a href="#" aria-label="Facebook">💙 rapibolitas</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Navegación</h5>
+          <a href="#inicio">Inicio</a>
+          <a href="#menu">Nuestro Menú</a>
+          <a href="#combos">Combos</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-contact">
+          <h5>Garantías</h5>
+          <p>🛡️ Calidad garantizada</p>
+          <p>🎧 Atención personalizada</p>
+          <p>💰 Precios accesibles</p>
+          <p>❤️ Hecho con amor para ti</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rapibolitas · Bolitas de Papa con Queso · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CARRITO SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>🛒 Carrito de Compras</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">Tu carrito está vacío 🛒<br/><small>Agrega productos del menú</small></div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal:</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <a href="#" id="cartWhatsapp" target="_blank" class="btn-checkout">
+        📲 Finalizar por WhatsApp · 6842-8856
+      </a>
+    </div>
+  </aside>
+
+  <script src="JS/rapiboli.js"></script>
+</body>
+</html>
